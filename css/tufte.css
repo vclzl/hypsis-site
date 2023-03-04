@@ -88,6 +88,7 @@ h1 {
 }
 
 h2 {
+    font-family: SpaceGrotesk;
     font-style: normal;
     font-weight: 400;
     margin-top: 2.1rem;
@@ -97,6 +98,7 @@ h2 {
 }
 
 h3 {
+    font-family: SpaceGrotesk;
     font-style: normal;
     font-weight: 400;
     font-size: 1.7rem;
@@ -129,13 +131,13 @@ p.subtitle {
 }
 
 .navigation {
+    position: fixed;
     float: left;
-    clear: left;
-    margin-left: -60%;     
-    padding-left: 20px;
+    margin-left: -20em;
+    margin-top: -4rem;
+    font-family: SpaceGrotesk;
     color: black;
-    background-color: #40a8a8;
-    width: 40%;
+    width: 100%;
 
 
 }
@@ -169,6 +171,13 @@ p {
     vertical-align: baseline;
 }
 
+#refs {
+    padding: 0.5em;
+    text-indent: -0.5em;
+
+}
+
+
 /* Chapter Epigraphs */
 div.epigraph {
     margin: 5em 0;
@@ -194,13 +203,13 @@ div.epigraph > blockquote > footer > cite {
 /* end chapter epigraphs styles */
 
 blockquote {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
 blockquote p {
     width: 100%;
     margin-right: 10em;
-    font-size: 0.8em ;
+    font-size: 0.9em ;
 }
 
 blockquote footer {
