@@ -59,15 +59,22 @@ html {
 
     
 body {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-columns: 200px 1.5fr 0.7fr;
+    grid-template-rows: 100px auto; 
+    gap: 20px;
     padding-left: 0%;
     font-family: MontaguSlab, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     color: #111;
-    max-width: 1400px;
+    max-width: 1200px;
     counter-reset: sidenote-counter;
+}
+
+article{
+    grid-column: 2;
+    grid-row: 2;
+    box-sizing: border-box;
 }
 
 /* Adds dark mode */
@@ -81,7 +88,7 @@ body {
 h1 {
     font-family: SpaceGrotesk;
     font-weight: normal;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
     font-size: 3 rem;
     line-height: 1;
@@ -131,15 +138,16 @@ p.subtitle {
 }
 
 .navigation {
-    position: fixed;
-    float: left;
-    margin-left: -20em;
-    margin-top: -4rem;
+    grid-column: 1;
+    grid-row: 1;
     font-family: SpaceGrotesk;
-    color: black;
     width: 100%;
+    margin-top: 3em;
+    vertical-align: baseline;
+}
 
-
+.navigation ul {
+    padding-left: 1em;
 }
 
 
@@ -147,9 +155,6 @@ p.subtitle {
     color: red;
 }
 
-article {
-    padding: 5rem 0rem;
-}
 
 section {
     padding-top: 1rem;
@@ -172,12 +177,12 @@ p {
 }
 
 #refs {
-    padding: 0.5em;
+    padding: 1em;
     font-family: SpaceGrotesk;
     font-weight: lighter;
     overflow-wrap: break-word;
     text-align: justify;
-    text-indent: -0.5em;
+    text-indent: -1em;
     column-count: 2;
     column-width: 10em;
     column-gap: 2.5em;
