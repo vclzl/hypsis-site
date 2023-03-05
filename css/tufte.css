@@ -9,24 +9,7 @@ html {
     font-size: 1em;
 }
 
-@font-face {
-    font-family: LibreBaskerville;
-    font-style: normal;
-    font-weight: normal;
-    src:url("../fonts/LibreBaskerville-Regular.ttf");
-  }
-  @font-face {
-    font-family: LibreBaskerville;
-    font-style: italic;
-    font-weight: normal;
-    src:url("../fonts/LibreBaskerville-Italic.ttf");
-  }
-  @font-face {
-    font-family: LibreBaskerville;
-    font-style: normal;
-    font-weight: bold;
-    src:url("../fonts/LibreBaskerville-Bold.ttf");
-  }
+
   @font-face {
     font-family: SpaceGrotesk;
     font-style: normal;
