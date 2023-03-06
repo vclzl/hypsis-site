@@ -304,14 +304,19 @@ a:link::-moz-selection {
 
 /* Sidenotes, margin notes, figures, captions */
 img {
-    max-width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    grid-column-start: 3;
+    float: right;
+    clear: right;
+    margin-right: -70%;
 }
 
 .sidenote,
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -60%;                                
+    margin-right: -60%;                           
     width: 50%;
     margin-top: 0.3rem;
     margin-bottom: 0;
