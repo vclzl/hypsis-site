@@ -490,6 +490,10 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 
+    .navigation{
+        display: none;
+    }
+
     label.margin-toggle:not(.sidenote-number) {
         display: inline;
     }
@@ -522,5 +526,7 @@ label.margin-toggle:not(.sidenote-number) {
 
     img {
         width: 100%;
+        grid-column: 2;
+        justify-content: center;
     }
 }
