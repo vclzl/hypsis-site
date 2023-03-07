@@ -321,7 +321,6 @@ img {
     float: right;
     clear: right;
     margin-right: -70%;
-    object-fit: scale-down;
 }
 
 .sidenote,
