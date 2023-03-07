@@ -43,7 +43,7 @@ html {
     
 body {
     display: grid;
-    grid-template-columns: 200px 1.5fr 0.7fr;
+    grid-template-columns: 0.5fr 1.5fr 0.7fr;
     grid-template-rows: 100px auto; 
     gap: 20px;
     padding-left: 0%;
@@ -527,8 +527,6 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     img {
-        width: 100%;
-        grid-column: 2;
-        justify-content: center;
+       display: none;
     }
 }
