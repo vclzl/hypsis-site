@@ -43,8 +43,8 @@ html {
     @media (min-width: 900px) {
         body {
             display: grid;
-            grid-template-columns: 0.5fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr; 
+            grid-template-columns: 0.5fr 2fr;
+            grid-template-rows: 0.5fr 2fr; 
             gap: 30px;
 
         }
@@ -65,30 +65,10 @@ html {
 }
 
 
-section#recherche {
-    font-family: SpaceGrotesk;
-    grid-column: 2;
-    grid-row: 3;
-    
-}
-
-section#creation{
-    font-family: SpaceGrotesk;
-    grid-column: 3;
-    grid-row: 2;
-    
-}
-
-section#lectures{
-    font-family: SpaceGrotesk;
-    grid-column: 4;
-    grid-row: 1; 
-}
-
 section#bio{
     font-family: SpaceGrotesk;
     grid-column: 2;
-    grid-row: 1; 
+    grid-row: 2; 
 }
 
 /* Adds dark mode */
