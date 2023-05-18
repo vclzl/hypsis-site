@@ -68,7 +68,7 @@ html {
 section#bio{
     font-family: SpaceGrotesk;
     grid-column: 2;
-    grid-row: 2; 
+    grid-row: 1; 
 }
 
 /* Adds dark mode */
@@ -88,6 +88,7 @@ h1 {
     margin-bottom: 1.5rem;
     font-size: 3 rem;
     line-height: 1;
+    display: none;
 }
 
 h2 {
