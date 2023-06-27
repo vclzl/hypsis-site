@@ -69,6 +69,14 @@ article{
     box-sizing: border-box;
 }
 
+footer {
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 2rem 0 5rem 0;
+	text-align: center;
+    grid-column: 2;
+}
+
 /* Adds dark mode */
 @media (prefers-color-scheme: dark) {
     body {
