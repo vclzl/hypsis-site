@@ -53,9 +53,10 @@ html {
             flex-direction: column;
 
         }
-
-
     }
+ 
+
+    
 
     body {
     padding: 0;
@@ -119,10 +120,6 @@ main {
     color: red;
 }
 
-@media screen and (max-width: 800px) {
-    .sidebar{visibility: hidden;}
-    
-}
 
 .page {
     width: 100%;
@@ -588,14 +585,32 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
     body {
-        width: 86%;
+        width: 90%;
         padding-left: 7%;
         padding-right: 7%;
-        grid-template-columns: 1;
-        grid-template-rows: 1;
+        font-size: 16px;
+        baseline: 20px;
     }
+
+    .entete{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+     nav {
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            z-index: 99;
+     }
+
+
+      
+    .sidebar{display: none;}
+        
 
     article {
         width: 100%;
@@ -638,9 +653,6 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 
-    .navigation{
-        display: none;
-    }
 
     label.margin-toggle:not(.sidenote-number) {
         display: inline;
