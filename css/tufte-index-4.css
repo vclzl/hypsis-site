@@ -135,16 +135,8 @@ main {
 
 
 .entete {
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    padding-left: 3.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    border-bottom: solid #111 thin;
-    background-color: yellow;
+    display: none;
+
     
 }
 
@@ -584,9 +576,7 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     .entete{
-        position: relative;
-        display: flex;
-        flex-direction: column;
+       display: none;
     }
 
      nav {
@@ -603,17 +593,12 @@ label.margin-toggle:not(.sidenote-number) {
         line-height: 0.5em;
     }
     .sidebar{display: none;}
-
-    .entete{
-        padding-left: 2.5rem;
-    }
         
     .corpsdetexte{
-        padding-left: 2.5rem;
-        padding-top: 1rem;
-        width: 85%;
+        width: auto;
+        padding-top: 0;
+        padding-left: 1.5rem;
     }
-
     article {
         width: 100%;
     }
