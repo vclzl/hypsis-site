@@ -119,6 +119,11 @@ main {
     color: red;
 }
 
+@media screen and (max-width: 800px) {
+    .sidebar{visibility: hidden;}
+    
+}
+
 .page {
     width: 100%;
     display: flex;
