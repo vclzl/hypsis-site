@@ -579,7 +579,7 @@ label.margin-toggle:not(.sidenote-number) {
         width: 90%;
         padding-left: 7%;
         padding-right: 7%;
-        font-size: 16px;
+        font-size: 20px;
         --baseline: 20px;
     }
 
@@ -606,6 +606,7 @@ label.margin-toggle:not(.sidenote-number) {
 
     .entete{
         padding-left: 2.5rem;
+        z-index: 1;
     }
         
     .corpsdetexte{
