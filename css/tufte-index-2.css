@@ -43,9 +43,9 @@ html {
     @media (min-width: 900px) {
         body {
             display: grid;
-            grid-template-columns: 0.5fr 2fr 2fr;
-            grid-template-rows: 0.5fr 2fr 2fr; 
+            grid-template-columns: 0.5fr 1fr 1fr 1fr;
             gap: 30px;
+            grid-template-rows: auto auto auto;
 
         }
 
@@ -61,26 +61,33 @@ html {
     color: #111;
     max-width: 1200px;
     counter-reset: sidenote-counter;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
+.context {border: 1px dotted; padding-left: 1px;}
 
 section#critiques{
     font-family: SpaceGrotesk;
-    grid-column: 2;
-    grid-row: 1; 
+    grid-column: 4;
+    grid-row: 2;
+    border-inline-start: 1px solid #5d5d5d;
+    padding-left: 5px;
+
 }
 
 section#recherche{
     font-family: SpaceGrotesk;
     grid-column: 3;
-    grid-row: 1; 
+    grid-row: 1;
+    border-inline-start: 1px solid #5d5d5d;
+    padding-left: 5px;
+
 }
 
 section#lectures{
     font-family: SpaceGrotesk;
     grid-column: 2;
-    grid-row: 2; 
+    grid-row: 1;
 }
 
 footer{
@@ -105,7 +112,7 @@ h1 {
     margin-bottom: 1.5rem;
     font-size: 3 rem;
     line-height: 1;
-    display: none;
+    
 }
 
 h2 {
@@ -159,10 +166,6 @@ p.subtitle {
     vertical-align: baseline;
 }
 
-.navigation ul {
-    padding-left: 1em;
-}
-
 
 .danger {
     color: red;
@@ -170,7 +173,7 @@ p.subtitle {
 
 
 section {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
 }
 

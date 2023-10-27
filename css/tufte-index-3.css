@@ -36,45 +36,127 @@ html {
     }
 
     @font-face {
+        font-family: Italiana;
+        font-style: normal;
+        font-weight: normal;
+        src:url("../fonts/Italiana-Regular.ttf");
+      }
+
+    @font-face {
       font-family: MontaguSlab;
       src:url(../fonts/MontaguSlab-VariableFont_opsz\,wght.ttf);
     }
 
     @media (min-width: 900px) {
         body {
-            display: grid;
-            grid-template-columns: 0.5fr 1.5fr 0.7fr;
-            gap: 30px;
+            display: flex;
+            flex-direction: column;
 
         }
 
 
     }
 
-
-
     body {
-    padding-left: 0%;
+    padding: 0;
     font-family: MontaguSlab, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     color: #111;
-    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    --max-width: 1080px;
     counter-reset: sidenote-counter;
-    margin-top: 2em;
+    margin: 0;
+
 }
 
-article{
-    grid-column: 2;
-    grid-row: 2;
-    box-sizing: border-box;
+nav { 
+    position: fixed;
+    top: 0;
+    font-family: SpaceGrotesk;
+    width: 100%;
+    display: inline-flex;
+   justify-content: space-between;
+   z-index: 9001;
+   background-color: #fffff8;
+   margin-top: 0;
+   border-bottom: solid black thin;
+  }
+
+.initiales {color: red;
+
 }
 
-footer {
-	font-size: 0.8rem;
-	margin: 0;
-	padding: 2rem 0 5rem 0;
-	text-align: center;
-    grid-column: 2;
+
+
+.navigation {
+    margin-right: 40px;
+    scroll-behavior: smooth;
+}
+
+.context {border: 1px dotted; padding-left: 1px;}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10vw;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: #111 solid thin;
+    padding-top: 3.5rem;
+}
+
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: SpaceGrotesk;
+    padding-left: 3.5rem;
+}
+
+.entete {
+    visibility: hidden;
+}
+
+.page ul {list-style: none;
+    
+}
+
+section#critiques{
+
+}
+    
+
+section#recherche{
+    
+    
+
+}
+
+#recherche ul li {
+    padding-left: 0em;
+}
+
+#recherche ul li::before {
+content: "\261E";
+padding-right: 1em;
+}
+
+
+section#lectures{
+}
+
+footer{
+    text-align: center;
 }
 
 /* Adds dark mode */
@@ -94,6 +176,7 @@ h1 {
     margin-bottom: 1.5rem;
     font-size: 3 rem;
     line-height: 1;
+    
 }
 
 h2 {
@@ -139,26 +222,15 @@ p.subtitle {
     font-family: MontaguSlab;
 }
 
-.navigation {
-    grid-column: 1;
-    grid-row: 1;
-    font-family: SpaceGrotesk;
-    width: 100%;
-    vertical-align: baseline;
-
-}
-
-
 
 
 .danger {
     color: red;
 }
 
-.context {border: 1px solid;}
 
 section {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
 }
 
@@ -176,8 +248,6 @@ p {
     padding-right: 0;
     vertical-align: baseline;
 }
-
-
 
 #refs {
     padding: 1em;
@@ -237,7 +307,7 @@ blockquote footer {
 section > p,
 section > footer,
 section > table {
-    width: 55%;
+    width: 100%;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
@@ -286,6 +356,7 @@ a:link,
 a:visited {
     color: inherit;
 }
+
 
 .no-tufte-underline:link {
     background: unset;
