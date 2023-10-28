@@ -73,12 +73,13 @@ html {
 }
 
 nav { 
+    position: fixed;
     top: 0;
     font-family: SpaceGrotesk;
     width: 100%;
     display: inline-flex;
    justify-content: space-between;
-   z-index: 1;
+   z-index: 99;
    background-color: #fffff8;
    margin-top: 0;
    border-bottom: solid black thin;
@@ -102,6 +103,7 @@ nav {
 main {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .sidebar {
@@ -111,7 +113,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     border-right: #111 solid thin;
-    padding-top: 3.5rem;
+    margin-top: 3.5rem;
 }
 
 .sidebar button {
@@ -136,7 +138,6 @@ main {
 
 .entete {
     display: none;
-
     
 }
 

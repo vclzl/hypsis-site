@@ -111,7 +111,6 @@ main {
     align-items: center;
     justify-content: flex-start;
     border-right: #111 solid thin;
-    padding-top: 3.5rem;
 }
 
 .sidebar button {
@@ -151,6 +150,9 @@ main {
 .entete h1 {
     font-family: Italiana;
     flex: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
 }
 
 .date {
