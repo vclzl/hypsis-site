@@ -47,13 +47,6 @@ html {
       src:url(../fonts/MontaguSlab-VariableFont_opsz\,wght.ttf);
     }
 
-    @media (min-width: 900px) {
-        body {
-            display: flex;
-            flex-direction: column;
-
-        }
-    }
  
 
     
@@ -567,13 +560,13 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
+/*ci-dessous le style sur écrans petits*/
+
+
 @media (max-width: 800px) {
     body {
-        width: 90%;
-        padding-left: 7%;
-        padding-right: 7%;
-        font-size: 16px;
-        --baseline: 20px;
+        font-size: 18px;
+        --baseline: 18px;
     }
 
     .entete{
@@ -634,6 +627,7 @@ label.margin-toggle:not(.sidenote-number) {
     blockquote {
         margin-left: 1.5em;
         margin-right: 0em;
+        font-size: 16px;
     }
 
     blockquote p,
