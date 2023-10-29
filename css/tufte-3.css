@@ -12,28 +12,17 @@ html {
 
   @font-face {
     font-family: SpaceGrotesk;
-    font-style: normal;
-    font-weight: medium;
-    src:url("../fonts/SpaceGrotesk-Medium.ttf");
+    src:url(../fonts/SpaceGrotesk-Regular.ttf);
+    font-weight: 400;
+
   }
-    @font-face {
-      font-family: SpaceGrotesk;
-      font-style: normal;
-      font-weight: bold;
-      src:url("../fonts/SpaceGrotesk-Bold.ttf");
-    }
-    @font-face {
-      font-family: SpaceGrotesk;
-      font-style: normal;
-      font-weight: lighter;
-      src:url("../fonts/SpaceGrotesk-Light.ttf");
-    }
-    @font-face {
-      font-family: SpaceGrotesk;
-      font-style: normal;
-      font-weight: normal;
-      src:url("../fonts/SpaceGrotesk-Regular.ttf");
-    }
+
+  @font-face {
+    font-family: SpaceGrotesk;
+    src:url(../fonts/SpaceGrotesk-SemiBold.ttf);
+    font-weight: 600;
+
+  }
 
     @font-face {
         font-family: Italiana;
@@ -53,7 +42,8 @@ html {
 
     body {
     padding: 0;
-    font-family: MontaguSlab, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: SpaceGrotesk, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-weight: 400;
     background-color: #fffff8;
     color: #111;
     display: flex;
@@ -64,6 +54,9 @@ html {
     margin: 0;
 
 }
+
+
+
 
 nav { 
     top: 0;
@@ -88,7 +81,14 @@ nav {
     scroll-behavior: smooth;
 }
 
-.context {border: 1px dotted; padding-left: 1px;}
+.context {
+    border: 1px dotted;
+    padding-left: 1px;
+    font-family: SpaceGrotesk;
+    font-size: 22px;
+    font-weight: 400;
+
+}
 
 
 
@@ -117,7 +117,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: SpaceGrotesk;
+    font-family: MontaguSlab;
 }
 
 
@@ -140,8 +140,10 @@ main {
     
 }
 
-.entete h1 {
+.title {
     font-family: Italiana;
+    font-size: 42px;
+    font-weight: 400;
     flex: 80%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -152,6 +154,7 @@ main {
     flex: 20%;
     height: 100%;
     font-family: Italiana;
+    font-size: 24px;
     padding-left: 5px;
 
 }
@@ -159,10 +162,20 @@ main {
 .corpsdetexte {
     padding-top: 5rem;
     padding-left: 3.5rem;
-    width: 70%;
+    width: 60%;
     z-index: 1;
+    line-height: 1.4rem;
+    font-size: 20px;
+    font-weight: 300;
+    
     
 }
+
+.corpsdetexte > h1, h2, h3, h4 {
+    font-family: SpaceGrotesk;
+    font-weight: 600;
+}
+
 .corpsdetexte .priv {
     visibility: hidden;
 }
@@ -205,47 +218,7 @@ section#lectures{
 
 
 
-h1 {
-    font-family: SpaceGrotesk;
-    font-weight: normal;
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    font-size: 3 rem;
-    line-height: 1;
-    
-}
 
-h2 {
-    font-family: SpaceGrotesk;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 2.1rem;
-    margin-bottom: 1.4rem;
-    font-size: 2.2rem;
-    line-height: 1;
-}
-
-h3 {
-    font-family: SpaceGrotesk;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.7rem;
-    margin-top: 2rem;
-    margin-bottom: 1.4rem;
-    line-height: 1;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    width: 55%;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
 p.subtitle {
     font-style: italic;
