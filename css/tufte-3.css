@@ -159,6 +159,8 @@ main {
 
 }
 
+
+
 .corpsdetexte {
     padding-top: 5rem;
     padding-left: 3.5rem;
@@ -544,8 +546,8 @@ label.margin-toggle:not(.sidenote-number) {
 
 @media (max-width: 800px) {
     body {
-        font-size: 18px;
-        --baseline: 18px;
+        font-size: 16px;
+        --baseline: 16px;
     }
 
     .entete{
@@ -575,9 +577,10 @@ label.margin-toggle:not(.sidenote-number) {
     }
         
     .corpsdetexte{
-        padding-left: 2.5rem;
+        padding-left: 2rem;
+        padding-right: 0.5rem;
         padding-top: 1rem;
-        width: 95%;
+        width: 85%;
     }
 
     article {
