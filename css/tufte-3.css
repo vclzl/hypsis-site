@@ -107,15 +107,25 @@ nav {
 }
 
 .context {
-    border: 1px dotted;
-    padding-left: 1px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: SpaceGrotesk;
-    font-size: 22px;
     font-weight: 400;
-
+    font-size: 16px;
+    text-align: justify;
+    background-color: rgb(255, 255, 231);
+    float: right;
+    clear: right;
+    margin-right: -50%;                           
+    width: 40%;
 }
 
-
+.context > p {
+    line-height: 1.5rem;
+}
 
 main {
     display: flex;
@@ -217,8 +227,10 @@ main {
 
 footer {
     align-items: end;
-    font-family: Italiana;
-    font-size: small;
+    font-family: SpaceGrotesk;
+    font-weight: 300;
+    color: #665566;
+    font-size: 0.8rem;
     border-top: #111 solid thin;
     text-align: center;
     width: 100%;
@@ -305,6 +317,7 @@ iframe {
     padding: 1em;
     font-family: SpaceGrotesk;
     font-weight: 300;
+    font-size: 18px;
     overflow-wrap: break-word;
     text-align: justify;
     text-indent: -1em;

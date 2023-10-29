@@ -99,15 +99,19 @@ nav {
 }
 
 .context {
-    border: 1px dotted;
-    padding-left: 1px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: SpaceGrotesk;
-    font-size: 22px;
     font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    background-color: rgb(255, 255, 231);
+   
 
 }
-
-
 
 main {
     display: flex;
@@ -164,7 +168,6 @@ main {
 
 }
 .corpsdetexte {
-    padding-top: 5rem;
     padding-left: 3.5rem;
     width: 60%;
     z-index: 1;
@@ -189,7 +192,9 @@ section > h1 {
 
 footer {
     align-items: end;
-    font-family: Italiana;
+    font-family: SpaceGrotesk;
+    font-weight: 300;
+    color: #665566;
     font-size: small;
     border-top: #111 solid thin;
     text-align: center;
@@ -202,6 +207,10 @@ section#critiques{
 
 }
     
+#critiques ul li::before {
+    content: "\261E";
+    padding-right: 1em;
+    }
 
 section#recherche{
     
