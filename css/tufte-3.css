@@ -10,18 +10,43 @@ html {
 }
 
 
-  @font-face {
+@font-face {
+    font-family: SpaceGrotesk;
+    src:url(../fonts/SpaceGrotesk-Light.ttf);
+    font-weight: 300;
+
+  }
+
+@font-face {
     font-family: SpaceGrotesk;
     src:url(../fonts/SpaceGrotesk-Regular.ttf);
     font-weight: 400;
 
   }
+  @font-face {
+    font-family: SpaceGrotesk;
+    src:url(../fonts/SpaceGrotesk-Medium.ttf);
+    font-weight: 500;
 
+  }
   @font-face {
     font-family: SpaceGrotesk;
     src:url(../fonts/SpaceGrotesk-SemiBold.ttf);
     font-weight: 600;
 
+  }
+
+  @font-face {
+    font-family: SpaceGrotesk;
+    src:url(../fonts/SpaceGrotesk-Bold.ttf);
+    font-weight: 700;
+
+  }
+
+  @font-face {
+    font-family: DiderotText;
+    src:url(../fonts/Diderot_Text-Regular_web.woff2);
+    font-weight: 400;
   }
 
     @font-face {
@@ -95,6 +120,7 @@ nav {
 main {
     display: flex;
     flex-direction: row;
+    width: 100vw;
 }
 
 .sidebar {
@@ -104,6 +130,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     border-right: #111 solid thin;
+    padding-top: 2rem;
 }
 
 .sidebar button {
@@ -141,9 +168,9 @@ main {
 }
 
 .title {
-    font-family: Italiana;
+    font-family: SpaceGrotesk;
     font-size: 42px;
-    font-weight: 400;
+    font-weight: 700;
     flex: 80%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -151,10 +178,11 @@ main {
 }
 
 .date {
-    flex: 20%;
+    flex: 30%;
     height: 100%;
-    font-family: Italiana;
-    font-size: 24px;
+    font-family: SpaceGrotesk;
+    font-weight: 500;
+    font-size: 18px;
     padding-left: 5px;
 
 }
@@ -176,6 +204,11 @@ main {
 .corpsdetexte > h1, h2, h3, h4 {
     font-family: SpaceGrotesk;
     font-weight: 600;
+}
+
+.corpsdetexte > h2 {
+    font-size: 24px;
+    padding-left: 1rem;
 }
 
 .corpsdetexte .priv {
@@ -262,10 +295,16 @@ p {
     vertical-align: baseline;
 }
 
+iframe {
+    width: 600px;
+    height: 400px;
+}
+
+
 #refs {
     padding: 1em;
     font-family: SpaceGrotesk;
-    font-weight: lighter;
+    font-weight: 300;
     overflow-wrap: break-word;
     text-align: justify;
     text-indent: -1em;
@@ -302,7 +341,7 @@ div.epigraph > blockquote > footer > cite {
 /* end chapter epigraphs styles */
 
 blockquote {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 blockquote p {
@@ -409,6 +448,7 @@ img {
     float: right;
     clear: right;
     margin-right: -35%;
+    filter: drop-shadow(0.1rem 0.1rem 5px black)
 }
 
 .sidenote,
