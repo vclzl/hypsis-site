@@ -209,8 +209,10 @@ section#critiques{
     
 #critiques ul li::before {
     content: "\261E";
-    padding-right: 1em;
+    margin-left: -1em;
     }
+
+
 
 section#recherche{
     

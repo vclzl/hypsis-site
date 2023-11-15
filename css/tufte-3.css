@@ -169,7 +169,7 @@ main {
     z-index: 99;
     padding-left: 3.5rem;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     border-bottom: solid #111 thin;
@@ -181,23 +181,29 @@ main {
     font-family: SpaceGrotesk;
     font-size: 42px;
     font-weight: 700;
-    flex: 80%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    flex: 70%;
 
 }
 
 .date {
-    flex: 30%;
-    height: 100%;
+    flex: 20%;
     font-family: SpaceGrotesk;
     font-weight: 500;
     font-size: 18px;
-    padding-left: 5px;
 
 }
 
-
+.abstract {
+    font-family: SpaceGrotesk;
+    padding-left: 3.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: baseline;
+    border-bottom: solid #111 thin;
+    border-right: solid #111 thin;
+    background-color: yellow;
+    width: 60%;
+}
 
 .corpsdetexte {
     padding-top: 5rem;
@@ -205,7 +211,7 @@ main {
     width: 60%;
     z-index: 1;
     line-height: 1.4rem;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     
     
