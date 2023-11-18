@@ -631,6 +631,7 @@ label.margin-toggle:not(.sidenote-number) {
             flex-direction: column;
             position: sticky;
             z-index: 99;
+            height: auto;
      }
 
     .initiales{
