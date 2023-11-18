@@ -9,9 +9,11 @@ window.addEventListener('scroll', function() {
     document.querySelector('nav').classList.add('is-visible');
     document.querySelector('nav').classList.remove('is-hidden');
   } else {
+        if(currentScrollPos > 200){
     // user has scrolled down
     document.querySelector('nav').classList.add('is-hidden');
     document.querySelector('nav').classList.remove('is-visible');
+        }
   }
 
   // update previous scroll position

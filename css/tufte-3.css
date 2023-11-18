@@ -91,6 +91,7 @@ nav {
     font-family: SpaceGrotesk;
     font-size: 18px;
     width: 100%;
+    transition: top 1s;
     display: inline-flex;
    justify-content: space-between;
    z-index: 99;
@@ -100,7 +101,7 @@ nav {
   }
 
 nav.is-hidden {
-    top:0 !important
+    top:-10rem !important
 }
 
 
