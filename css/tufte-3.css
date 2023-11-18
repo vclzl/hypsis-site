@@ -636,10 +636,19 @@ label.margin-toggle:not(.sidenote-number) {
         --baseline: 16px;
     }
 
-    .entete{
-        position: relative;
+    .entete {
+        position: sticky;
+        top: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        row-gap: 0;
+        padding-left: 2.5rem;
+        z-index: 80;
+
+    }
+
+    .title {
+        margin-block-start: 0;
     }
 
      nav {
@@ -647,6 +656,7 @@ label.margin-toggle:not(.sidenote-number) {
             flex-direction: column;
             position: sticky;
             z-index: 99;
+            height: auto;
      }
 
     .initiales{
@@ -658,10 +668,7 @@ label.margin-toggle:not(.sidenote-number) {
     }
     .sidebar{display: none;}
 
-    .entete{
-        padding-left: 2.5rem;
-        z-index: 1;
-    }
+    
         
     .corpsdetexte{
         padding-left: 0.8rem;
