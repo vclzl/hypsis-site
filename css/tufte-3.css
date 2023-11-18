@@ -7,6 +7,8 @@
 /* Tufte CSS styles */
 html {
     font-size: 1em;
+    scroll-behavior: smooth !important;
+
 }
 
 
@@ -107,7 +109,6 @@ nav {
 }
 
 .navigation {
-    scroll-behavior: smooth;
     padding-inline-end: 5rem;
 }
 
