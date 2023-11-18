@@ -638,6 +638,7 @@ label.margin-toggle:not(.sidenote-number) {
 
     .initiales{
         line-height: 0.5em;
+        padding-inline-start: 0em;
      }
     .navigation{
         line-height: 0.5em;
