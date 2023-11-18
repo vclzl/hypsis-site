@@ -85,6 +85,7 @@ nav {
   }
 
 .initiales {color: red;
+    display: inline-flex;
 
 }
 

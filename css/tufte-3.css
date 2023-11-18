@@ -86,24 +86,29 @@ html {
 nav { 
     top: 0;
     font-family: SpaceGrotesk;
+    font-size: 18px;
     width: 100%;
     display: inline-flex;
    justify-content: space-between;
-   z-index: 1;
+   z-index: 99;
    background-color: #fffff8;
    margin-top: 0;
    border-bottom: solid black thin;
   }
 
 .initiales {color: red;
-
+    padding-inline-start: 6rem;
+    display: inline-flex;
 }
 
-
+.socials {
+    position: relative;
+    top: 3px;
+}
 
 .navigation {
-    margin-right: 40px;
     scroll-behavior: smooth;
+    padding-inline-end: 5rem;
 }
 
 .context {
@@ -173,7 +178,7 @@ main {
     justify-content: space-between;
     align-items: baseline;
     border-bottom: solid #111 thin;
-    background-color: yellow;
+    background-color: #ffff1a;
     
 }
 
@@ -220,6 +225,7 @@ main {
 .corpsdetexte > h1, h2, h3, h4 {
     font-family: SpaceGrotesk;
     font-weight: 600;
+    line-height: 2rem;
 }
 
 .corpsdetexte > h2 {
@@ -421,6 +427,13 @@ figcaption {
 figure.fullwidth figcaption {
     margin-right: 24%;
 }
+
+sup {
+    line-height: 0;
+    font-size: 0.6rem;
+
+}
+
 
 /* Links: replicate underline that clears descenders */
 a:link,

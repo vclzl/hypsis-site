@@ -78,6 +78,7 @@ nav {
     position: sticky;
     top: 0;
     font-family: SpaceGrotesk;
+    font-size: 18px;
     width: 100%;
     display: inline-flex;
    justify-content: space-between;
@@ -88,14 +89,20 @@ nav {
   }
 
 .initiales {color: red;
+    padding-inline-start: 6rem;
+    display: inline-flex;
 
 }
 
+.socials {
+    position: relative;
+    top: 3px;
+}
 
 
 .navigation {
-    margin-right: 40px;
     scroll-behavior: smooth;
+    padding-inline-end: 5rem;
 }
 
 .context {
@@ -120,7 +127,7 @@ main {
 }
 
 .sidebar {
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-basis: 10vw;
     align-items: center;
@@ -145,7 +152,7 @@ main {
 
 .page ul {
     list-style: none;
-    text-indent: -1rem;
+    
     
 }
 
@@ -168,13 +175,17 @@ main {
 
 }
 .corpsdetexte {
-    padding-left: 3.5rem;
-    width: 60%;
     z-index: 1;
     line-height: 1.4rem;
-    font-size: 20px;
-    font-family: MontaguSlab;
+    font-size: 18px;
     font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+
+   
+    
     
     
 }
@@ -185,10 +196,81 @@ main {
 
 }
 
+section {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 1rem;
+    border: #111 solid thin;
+    margin-top: -1px;
+    margin-left: -1px;
+    min-width: 20rem;
+    width: min-content;
+   
+}
+
 section > h1 {
     font-family: SpaceGrotesk;
     font-weight: 600;
 }
+
+section > h2 {
+    font-family: SpaceGrotesk;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+section ul {
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 1rem;
+}
+
+section ul ul li {
+    margin-bottom: 1.5rem;
+}
+
+section ul ul li::before {
+    content: "\261E";
+    position: absolute;
+    margin-left: -2rem;
+    }
+
+section#carnet{
+    
+}
+    
+#carnet ul li::before {
+    content: "\261E";
+    position: absolute;
+    margin-left: -2rem;
+    }
+
+#carnet ul li {
+    padding-left: 0em;
+}
+
+section#recherche{
+    width: max-content;    
+}
+
+#recherche ul li {
+    padding-left: 0em;
+}
+
+
+section#lectures-publiques {
+    min-width: 35%;
+ 
+}
+
+section#bienvenue {
+    background-color: #ffff1a;
+    max-width: 20%;
+}
+
 
 footer {
     align-items: end;
@@ -196,41 +278,10 @@ footer {
     font-weight: 300;
     color: #665566;
     font-size: small;
-    border-top: #111 solid thin;
     text-align: center;
     width: 100%;
     padding-top: 2rem;
     margin-bottom: 1rem;
-}
-
-section#critiques{
-
-}
-    
-#critiques ul li::before {
-    content: "\261E";
-    margin-left: -1em;
-    }
-
-
-
-section#recherche{
-    
-    
-
-}
-
-#recherche ul li {
-    padding-left: 0em;
-}
-
-#recherche ul li::before {
-content: "\261E";
-padding-right: 1em;
-}
-
-
-section#lectures{
 }
 
 
@@ -253,11 +304,6 @@ p.subtitle {
     color: red;
 }
 
-
-section {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-}
 
 p,
 dl,
@@ -373,6 +419,12 @@ figcaption {
 
 figure.fullwidth figcaption {
     margin-right: 24%;
+}
+
+sup {
+    line-height: 0;
+    font-size: 0.6rem;
+
 }
 
 /* Links: replicate underline that clears descenders */
