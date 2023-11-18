@@ -176,6 +176,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 3rem;
     align-items: baseline;
     border-bottom: solid #111 thin;
     background-color: #ffff1a;
