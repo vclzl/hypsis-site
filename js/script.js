@@ -6,10 +6,10 @@ window.addEventListener('scroll', function() {
 
   if (prevScrollPos > currentScrollPos) {
     // user has scrolled up
-    document.querySelector('.nav').classList.add('is-visible');
+    document.querySelector('nav').classList.add('is-visible');
   } else {
     // user has scrolled down
-    document.querySelector('.nav').classList.remove('is-hidden');
+    document.querySelector('nav').classList.remove('is-hidden');
   }
 
   // update previous scroll position
