@@ -681,6 +681,10 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 
+    .abstract{
+        width: 90%;
+    }
+
     hr,
     section > p,
     section > footer,
