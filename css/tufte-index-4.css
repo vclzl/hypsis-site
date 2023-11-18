@@ -632,6 +632,7 @@ label.margin-toggle:not(.sidenote-number) {
             position: sticky;
             z-index: 99;
             height: auto;
+            width: 100%;
      }
 
     .initiales{
