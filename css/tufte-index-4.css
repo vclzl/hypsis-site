@@ -88,7 +88,7 @@ nav {
    border-bottom: solid black thin;
   }
 
-.initiales {color: red;
+.initiales {color: #ff4d4d;
     padding-inline-start: 6rem;
     display: inline-flex;
 
@@ -221,7 +221,6 @@ section > h2 {
 }
 
 section ul {
-    padding-left: 0;
 }
 
 section ul li {
@@ -229,7 +228,7 @@ section ul li {
 }
 
 section ul ul li {
-    margin-bottom: 1.5rem;
+    color: #ff4d4d;
 }
 
 section ul ul li::before {
@@ -268,7 +267,12 @@ section#lectures-publiques {
 
 section#bienvenue {
     background-color: #ffff1a;
+}
+
+@media (min-width: 800px){
+section#bienvenue {
     max-width: 20%;
+}
 }
 
 
@@ -629,6 +633,7 @@ label.margin-toggle:not(.sidenote-number) {
 
     .initiales{
         line-height: 0.5em;
+        padding-inline-start: 0em;
      }
     .navigation{
         line-height: 0.5em;
@@ -638,10 +643,23 @@ label.margin-toggle:not(.sidenote-number) {
     .corpsdetexte{
         width: auto;
         padding-top: 0;
-        padding-left: 1.5rem;
     }
     article {
         width: 100%;
+    }
+
+
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        padding-left: 3.5rem;
+        padding-right: 1rem;
+        border: #111 solid thin;
+        margin-top: -1px;
+        margin-left: -1px;
+        min-width: 20rem;
+        width: 90%;
+
     }
 
     hr,
