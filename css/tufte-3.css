@@ -760,4 +760,8 @@ label.margin-toggle:not(.sidenote-number) {
     img {
        display: none;
     }
+
+    iframe {
+        width: 100%;
+    }
 }
