@@ -217,6 +217,7 @@ main {
     padding-left: 3.5rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    padding-inline-end: 1em;
     align-items: baseline;
     border-bottom: solid #111 thin;
     border-right: solid #111 thin;
@@ -683,6 +684,8 @@ label.margin-toggle:not(.sidenote-number) {
 
     .abstract{
         width: 70%;
+        text-align: justify;
+       
     }
 
     hr,
