@@ -12,61 +12,44 @@ html {
 }
 
 
-  @font-face {
+
+@font-face {
     font-family: SpaceGrotesk;
-    font-style: normal;
-    font-weight: medium;
-    src:url("../fonts/SpaceGrotesk-Medium.ttf");
-  }
-    @font-face {
-      font-family: SpaceGrotesk;
-      font-style: normal;
-      font-weight: bold;
-      src:url("../fonts/SpaceGrotesk-Bold.ttf");
-    }
-    @font-face {
-      font-family: SpaceGrotesk;
-      font-style: normal;
-      font-weight: lighter;
-      src:url("../fonts/SpaceGrotesk-Light.ttf");
-    }
-    @font-face {
-      font-family: SpaceGrotesk;
-      font-style: normal;
-      font-weight: normal;
-      src:url("../fonts/SpaceGrotesk-Regular.ttf");
-    
-    }
+    src: url(../fonts/SpaceGrotesk-Bold.ttf);
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family: DiderotText;
+    src: url(../fonts/Diderot_Text-Regular_web.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(../fonts/IBMPlexSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(../fonts/IBMPlexSans-LightItalic.ttf);
+    font-style: italic;
+    font-weight: 300;
+
+}
 
 
-    @font-face {
-        font-family: DiderotText;
-        src:url(../fonts/Diderot_Text-Regular_web.woff2);
-        font-weight: 400;
-      }
 
-    @font-face {
-        font-family: Italiana;
-        font-style: normal;
-        font-weight: normal;
-        src:url("../fonts/Italiana-Regular.ttf");
-      }
 
-    @font-face {
-      font-family: MontaguSlab;
-      src:url(../fonts/MontaguSlab-VariableFont_opsz\,wght.ttf);
-    }
 
- 
-
-    
-
-    body {
+body {
     padding: 0;
-    font-family: MontaguSlab, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: DiderotText, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     font-weight: 400;
-    color: #111;
+    color: #444444;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -76,26 +59,33 @@ html {
 
 }
 
-nav { 
-    position: sticky;
+nav {
     top: 0;
-    font-family: SpaceGrotesk;
-    font-size: 18px;
+    font-family: IBMPlexSans;
+    font-size: 24px;
     width: 100%;
+    transition: top 1s;
     display: inline-flex;
-   justify-content: space-between;
-   z-index: 99;
-   background-color: #fffff8;
-   margin-top: 0;
-   border-bottom: solid black thin;
-   height: 3rem;
-  }
-
-.initiales {color: #ff4d4d;
-    padding-inline-start: 6rem;
-    display: inline-flex;
-
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    z-index: 99;
+    background-image: linear-gradient(144deg, #ffe930 14.29%, #fffff8 14.29%, #fffff8 50%, #ffe930 50%, #ffe930 64.29%, #fffff8 64.29%, #fffff8 100%);
+    margin-top: 0;
+    background-size: 11.91px 8.65px;
+    background-repeat: repeat;
+    border-bottom: solid black thin;
+    height: 5rem;
 }
+
+.initiales {
+    color: rgb(111, 81, 81);
+    font-size: 28px;
+    display: inline-flex;
+}
+
+
+
 
 .socials {
     position: relative;
@@ -105,6 +95,9 @@ nav {
 
 .navigation {
     padding-inline-end: 5rem;
+    font-size: 28px;
+    color: rgb(111, 81, 81);
+
 }
 
 .context {
@@ -113,12 +106,12 @@ nav {
     padding-right: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
-    font-family: SpaceGrotesk;
+    font-family: IBMPlexSans;
     font-weight: 400;
     font-size: 16px;
     text-align: justify;
     background-color: rgb(255, 255, 231);
-   
+
 
 }
 
@@ -135,7 +128,8 @@ main {
     align-items: center;
     justify-content: flex-start;
     border-right: #111 solid thin;
-    padding-top: 2rem;}
+    padding-top: 2rem;
+}
 
 .sidebar button {
     position: sticky;
@@ -148,53 +142,50 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: SpaceGrotesk;
+    font-family: DiderotText;
+    color: #444444;
 }
 
 
 .page ul {
     list-style: none;
-    
-    
+
+
 }
 
 
 .entete {
     display: none;
-    
+
 }
 
-.entete h1 {
-    font-family: Italiana;
-    flex: 80%;
-}
 
 .date {
     flex: 20%;
     height: 100%;
-    font-family: Italiana;
+    font-family: IBMPlexSans;
     padding-left: 5px;
 
 }
+
 .corpsdetexte {
     z-index: 1;
     line-height: 1.4rem;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+    font-size: 21px;
+    padding: 0;
+    padding-top: 0;
 
-   
-    
-    
-    
 }
 
-.corpsdetexte > h1, h2, h3, h4 {
-    font-family: SpaceGrotesk;
-    font-weight: 600;
+.corpsdetexte>h1,
+h2,
+h3,
+h4 {
+    font-family: IBMPlexSans;
 
 }
 
@@ -207,54 +198,53 @@ section {
     margin-top: -1px;
     margin-left: -1px;
     min-width: 20rem;
-    width: min-content;
-   
+    width: fit-content;
+
 }
 
-section > h1 {
-    font-family: SpaceGrotesk;
-    font-weight: 600;
+section>h1 {
+    font-family: IBMPlexSans;
+    font-weight: 300;
 }
 
-section > h2 {
-    font-family: SpaceGrotesk;
-    font-weight: 400;
+section>h2 {
+    font-family: IBMPlexSans;
+    font-weight: 300;
     font-size: 24px;
 }
 
-section ul {
-}
+section ul {}
 
 section ul li {
     margin-bottom: 1rem;
 }
 
 section ul ul li {
-    color: #ff4d4d;
+   color: rgb(111, 81, 81);
 }
 
 section ul ul li::before {
     content: "\261E";
     position: absolute;
     margin-left: -2rem;
-    }
-
-section#carnet{
-    
 }
-    
+
+section#carnet {
+    min-width: 40%;
+}
+
 #carnet ul li::before {
     content: "\261E";
     position: absolute;
     margin-left: -2rem;
-    }
+}
 
 #carnet ul li {
     padding-left: 0em;
 }
 
-section#recherche{
-    width: max-content;    
+section#recherche {
+    width: fit-content;
 }
 
 #recherche ul li {
@@ -263,27 +253,36 @@ section#recherche{
 
 
 section#lectures-publiques {
-    min-width: 35%;
- 
+    width: fit-content;
+
 }
 
 section#bienvenue {
-    background-color: #ffff1a;
+    background-image: linear-gradient(126deg, #fffff8 31.53%, #ffe930 31.53%, #ffe930 50%, #fffff8 50%, #fffff8 81.53%, #ffe930 81.53%, #ffe930 100%);
+    background-size: 709.50px 976.55px;
+    font-family: IBMPlexSans;
+    width: min-content;
 }
 
-@media (min-width: 800px){
-section#bienvenue {
-    max-width: 20%;
-}
+
+
+
+/**  Styling small screens  **/
+
+
+@media (min-width: 800px) {
+    section#bienvenue {
+        max-width: 20%;
+    }
 }
 
 
 footer {
     align-items: end;
-    font-family: SpaceGrotesk;
+    font-family: IBMPlexSans;
     font-weight: 300;
     color: #665566;
-    font-size: small;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
     padding-top: 2rem;
@@ -328,7 +327,7 @@ p {
 
 #refs {
     padding: 1em;
-    font-family: SpaceGrotesk;
+    font-family: IBMPlexSans;
     font-weight: lighter;
     overflow-wrap: break-word;
     text-align: justify;
@@ -346,23 +345,24 @@ div.epigraph {
     margin: 5em 0;
 }
 
-div.epigraph > blockquote {
+div.epigraph>blockquote {
     margin-top: 3em;
     margin-bottom: 3em;
 }
 
-div.epigraph > blockquote,
-div.epigraph > blockquote > p {
+div.epigraph>blockquote,
+div.epigraph>blockquote>p {
     font-style: italic;
 }
 
-div.epigraph > blockquote > footer {
+div.epigraph>blockquote>footer {
     font-style: normal;
 }
 
-div.epigraph > blockquote > footer > cite {
+div.epigraph>blockquote>footer>cite {
     font-style: italic;
 }
+
 /* end chapter epigraphs styles */
 
 blockquote {
@@ -372,7 +372,7 @@ blockquote {
 blockquote p {
     width: 100%;
     margin-right: 10em;
-    font-size: 0.9em ;
+    font-size: 0.9em;
 }
 
 blockquote footer {
@@ -381,17 +381,17 @@ blockquote footer {
     text-align: right;
 }
 
-section > p,
-section > footer,
-section > table {
+section>p,
+section>footer,
+section>table {
     width: 100%;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
-section > dl,
-section > ol,
-section > ul {
-        -webkit-padding-start: 5%;
+section>dl,
+section>ol,
+section>ul {
+    -webkit-padding-start: 5%;
 }
 
 dt:not(:first-child),
@@ -434,9 +434,12 @@ sup {
 }
 
 /* Links: replicate underline that clears descenders */
-a:link,
+a:link {
+    color: #606060;
+    text-decoration: none;
+}
 a:visited {
-    color: inherit;
+    color: #808080;
 }
 
 
@@ -445,7 +448,9 @@ a:visited {
     text-shadow: none;
 }
 
-a:link, .tufte-underline, .hover-tufte-underline:hover {
+a:hover,
+.tufte-underline,
+.hover-tufte-underline:hover {
     text-decoration: none;
     background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
     background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
@@ -457,7 +462,10 @@ a:link, .tufte-underline, .hover-tufte-underline:hover {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    a:link, .tufte-underline, .hover-tufte-underline:hover {
+
+    a:hover,
+    .tufte-underline,
+    .hover-tufte-underline:hover {
         background-position-y: 87%, 87%, 87%;
     }
 }
@@ -484,7 +492,7 @@ img {
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -30%;                           
+    margin-right: -30%;
     width: 20%;
     margin-top: 0.3rem;
     margin-bottom: 0;
@@ -541,29 +549,31 @@ div.table-wrapper {
     letter-spacing: .03em;
 }
 
-code, pre > code {
+code,
+pre>code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.0rem;
     line-height: 1.42;
-    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+    -webkit-text-size-adjust: 100%;
+    /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
 }
 
-.sans > code {
+.sans>code {
     font-size: 1.2rem;
 }
 
-h1 > code,
-h2 > code,
-h3 > code {
+h1>code,
+h2>code,
+h3>code {
     font-size: 0.80em;
 }
 
-.marginnote > code,
-.sidenote > code {
+.marginnote>code,
+.sidenote>code {
     font-size: 1rem;
 }
 
-pre > code {
+pre>code {
     font-size: 0.9rem;
     width: 52.5%;
     margin-left: 2.5%;
@@ -571,13 +581,13 @@ pre > code {
     display: block;
 }
 
-pre.fullwidth > code {
+pre.fullwidth>code {
     width: 90%;
 }
 
 .fullwidth {
     max-width: 90%;
-    clear:both;
+    clear: both;
 }
 
 span.newthought {
@@ -591,7 +601,8 @@ input.margin-toggle {
 
 label.sidenote-number {
     display: inline-block;
-    max-height: 2rem; /* should be less than or equal to paragraph line-height */
+    max-height: 2rem;
+    /* should be less than or equal to paragraph line-height */
 }
 
 label.margin-toggle:not(.sidenote-number) {
@@ -600,7 +611,8 @@ label.margin-toggle:not(.sidenote-number) {
 
 .iframe-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
@@ -622,32 +634,37 @@ label.margin-toggle:not(.sidenote-number) {
         --baseline: 18px;
     }
 
-    .entete{
-       display: none;
+    .entete {
+        display: none;
     }
 
-     nav {
-            display: flex;
-            flex-direction: column;
-            position: sticky;
-            z-index: 99;
-            height: auto;
-            width: 100%;
-     }
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        z-index: 99;
+        height: auto;
+        width: 100%;
+    }
 
-    .initiales{
+    .initiales {
         line-height: 0.5em;
         padding-inline-start: 0em;
-     }
-    .navigation{
+    }
+
+    .navigation {
         line-height: 0.5em;
     }
-    .sidebar{display: none;}
-        
-    .corpsdetexte{
+
+    .sidebar {
+        display: none;
+    }
+
+    .corpsdetexte {
         width: auto;
         padding-top: 0;
     }
+
     article {
         width: 100%;
     }
@@ -667,19 +684,19 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     hr,
-    section > p,
-    section > footer,
-    section > table {
+    section>p,
+    section>footer,
+    section>table {
         width: 100%;
     }
 
-    pre > code {
+    pre>code {
         width: 97%;
     }
 
-    section > dl,
-    section > ol,
-    section > ul {
+    section>dl,
+    section>ol,
+    section>ul {
         width: 90%;
     }
 
@@ -714,8 +731,8 @@ label.margin-toggle:not(.sidenote-number) {
         display: none;
     }
 
-    .margin-toggle:checked + .sidenote,
-    .margin-toggle:checked + .marginnote {
+    .margin-toggle:checked+.sidenote,
+    .margin-toggle:checked+.marginnote {
         display: block;
         float: left;
         left: 1rem;
@@ -736,6 +753,6 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     img {
-       display: none;
+        display: none;
     }
 }

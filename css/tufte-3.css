@@ -14,69 +14,75 @@ html {
 
 @font-face {
     font-family: SpaceGrotesk;
-    src:url(../fonts/SpaceGrotesk-Light.ttf);
+    src: url(../fonts/SpaceGrotesk-Light.ttf);
     font-weight: 300;
 
-  }
+}
 
 @font-face {
     font-family: SpaceGrotesk;
-    src:url(../fonts/SpaceGrotesk-Regular.ttf);
+    src: url(../fonts/SpaceGrotesk-Regular.ttf);
     font-weight: 400;
 
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: SpaceGrotesk;
-    src:url(../fonts/SpaceGrotesk-Medium.ttf);
+    src: url(../fonts/SpaceGrotesk-Medium.ttf);
     font-weight: 500;
 
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: SpaceGrotesk;
-    src:url(../fonts/SpaceGrotesk-SemiBold.ttf);
+    src: url(../fonts/SpaceGrotesk-SemiBold.ttf);
     font-weight: 600;
 
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: SpaceGrotesk;
-    src:url(../fonts/SpaceGrotesk-Bold.ttf);
+    src: url(../fonts/SpaceGrotesk-Bold.ttf);
     font-weight: 700;
 
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: DiderotText;
-    src:url(../fonts/Diderot_Text-Regular_web.woff2);
+    src: url(../fonts/Diderot_Text-Regular_web.woff2);
     font-weight: 400;
-  }
+}
 
-    @font-face {
-        font-family: Italiana;
-        font-style: normal;
-        font-weight: normal;
-        src:url("../fonts/Italiana-Regular.ttf");
-      }
 
-    @font-face {
-      font-family: MontaguSlab;
-      src:url(../fonts/MontaguSlab-VariableFont_opsz\,wght.ttf);
-    }
+@font-face {
+    font-family: MontaguSlab;
+    src: url(../fonts/MontaguSlab-VariableFont_opsz\,wght.ttf);
+}
 
- 
 
-    
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(../fonts/IBMPlexSans-Light.ttf);
+    font-weight: 300;
+}
 
-    body {
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(../fonts/IBMPlexSans-LightItalic.ttf);
+    font-style: italic;
+    font-weight: 300;
+
+}
+
+body {
     padding: 0;
     font-family: SpaceGrotesk, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-weight: 400;
     background-color: #fffff8;
-    color: #111;
+    color: #444444;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    --max-width: 1080px;
     counter-reset: sidenote-counter;
     margin: 0;
 
@@ -85,31 +91,37 @@ html {
 
 
 
-nav { 
+nav {
     top: 0;
     position: fixed;
-    font-family: SpaceGrotesk;
-    font-size: 18px;
+    font-family: IBMPlexSans;
+    font-size: 24px;
     width: 100%;
     transition: top 1s;
     display: inline-flex;
-   justify-content: space-between;
-   z-index: 99;
-   background-color: #fffff8;
-   margin-top: 0;
-   border-bottom: solid black thin;
-   height: 3rem;
-  }
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    z-index: 99;
+    background-image: linear-gradient(144deg, #ffe930 14.29%, #fffff8 14.29%, #fffff8 50%, #ffe930 50%, #ffe930 64.29%, #fffff8 64.29%, #fffff8 100%);
+    margin-top: 0;
+    background-size: 11.91px 8.65px;
+    background-repeat: repeat;
+    border-bottom: solid black thin;
+    height: 5rem;
+}
+
 
 nav.is-hidden {
-    top:-10rem !important
+    top: -10rem !important
 }
 
 
 
-.initiales {color: red;
-    padding-inline-start: 6rem;
-    display: inline-flex;
+.initiales {
+    color: rgb(111, 81, 81);
+    font-size: 28px;
+
 }
 
 .socials {
@@ -119,6 +131,8 @@ nav.is-hidden {
 
 .navigation {
     padding-inline-end: 5rem;
+    font-size: 28px;
+
 }
 
 .context {
@@ -134,24 +148,24 @@ nav.is-hidden {
     background-color: rgb(255, 255, 231);
     float: right;
     clear: right;
-    margin-right: -50%;                           
+    margin-right: -50%;
     width: 40%;
 }
 
-.context > p {
+.context>p {
     line-height: 1.5rem;
 }
 
 main {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    flex-basis: 10vw;
+    flex-basis: 10rem;
     align-items: center;
     justify-content: flex-start;
     border-right: #111 solid thin;
@@ -169,19 +183,21 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: MontaguSlab;
+    font-family: DiderotText;
 }
 
 
-.page ul {list-style: none;
-    
+.page ul {
+    list-style: none;
+
 }
 
 
 .entete {
-    position: sticky;
+    width: 100%;
     top: 0;
     z-index: 80;
+    padding-top: 6rem;
     padding-left: 3.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -189,31 +205,30 @@ main {
     gap: 3rem;
     align-items: baseline;
     border-bottom: solid #111 thin;
-    background-color: #ffff1a;
-
-    
+    background-image: linear-gradient(144deg, #ffe930 33.33%, #fffff8 33.33%, #fffff8 50%, #ffe930 50%, #ffe930 83.33%, #fffff8 83.33%, #fffff8 100%);
 }
 
 .title {
-    font-family: SpaceGrotesk;
-    font-size: 42px;
-    font-weight: 700;
+    font-family: IBMPlexSans;
+    font-size: 48px;
+    font-weight: 400;
     flex: 70%;
-    margin-block-end: 0.3em;
-    margin-block-start: 1.3em;
 
 }
 
 .date {
     flex: 20%;
-    font-family: SpaceGrotesk;
-    font-weight: 500;
-    font-size: 18px;
+    font-family: IBMPlexSans;
+    font-weight: 400;
+    font-size: 22px;
+    margin-right: 2rem;
 
 }
 
 .abstract {
-    font-family: SpaceGrotesk;
+    font-family: IBMPlexSans;
+    font-size: 20px;
+    font-weight: 400;
     padding-left: 3.5rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -221,30 +236,35 @@ main {
     align-items: baseline;
     border-bottom: solid #111 thin;
     border-right: solid #111 thin;
-    background-color: yellow;
+    background-color: #ffe930;
     width: 60%;
 }
 
 .corpsdetexte {
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-left: 3.5rem;
-    width: 60%;
+    width: 55%;
+    max-width: 7500px;
     z-index: 1;
     line-height: 1.4rem;
-    font-size: 18px;
-    font-weight: 300;
-    
-    
+    font-size: 21px;
+    font-weight: 400;
+
+
 }
 
-.corpsdetexte > h1, h2, h3, h4 {
-    font-family: SpaceGrotesk;
+.corpsdetexte>h1,
+h2,
+h3,
+h4 {
+    font-size: 32px;
+    font-family: IBMPlexSans;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 2.2rem;
 }
 
-.corpsdetexte > h2 {
-    font-size: 24px;
+.corpsdetexte>h2 {
+    font-size: 32px;
     padding-left: 1rem;
 }
 
@@ -254,10 +274,10 @@ main {
 
 footer {
     align-items: end;
-    font-family: SpaceGrotesk;
+    font-family: IBMPlexSans;
     font-weight: 300;
     color: #665566;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-top: #111 solid thin;
     text-align: center;
     width: 100%;
@@ -265,29 +285,22 @@ footer {
     margin-bottom: 1rem;
 }
 
-section#critiques{
+section#critiques {}
 
-}
-    
 
-section#recherche{
-    
-    
-
-}
+section#recherche {}
 
 #recherche ul li {
     padding-left: 0em;
 }
 
 #recherche ul li::before {
-content: "\261E";
-padding-right: 1em;
+    content: "\261E";
+    padding-right: 1em;
 }
 
 
-section#lectures{
-}
+section#lectures {}
 
 
 
@@ -342,7 +355,8 @@ iframe {
 
 #refs {
     padding: 1em;
-    font-family: SpaceGrotesk;
+    color: #606060;
+    font-family: IBMPlexSans;
     font-weight: 300;
     font-size: 18px;
     overflow-wrap: break-word;
@@ -352,6 +366,7 @@ iframe {
     column-width: 10em;
     column-gap: 2.5em;
     column-rule: #111;
+    orphans: 3;
 
 }
 
@@ -361,33 +376,32 @@ div.epigraph {
     margin: 5em 0;
 }
 
-div.epigraph > blockquote {
+div.epigraph>blockquote {
     margin-top: 3em;
     margin-bottom: 3em;
 }
 
-div.epigraph > blockquote,
-div.epigraph > blockquote > p {
+div.epigraph>blockquote,
+div.epigraph>blockquote>p {
     font-style: italic;
 }
 
-div.epigraph > blockquote > footer {
+div.epigraph>blockquote>footer {
     font-style: normal;
 }
 
-div.epigraph > blockquote > footer > cite {
+div.epigraph>blockquote>footer>cite {
     font-style: italic;
 }
+
 /* end chapter epigraphs styles */
 
 blockquote {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 blockquote p {
     width: 100%;
-    margin-right: 10em;
-    font-size: 0.9em ;
 }
 
 blockquote footer {
@@ -396,16 +410,16 @@ blockquote footer {
     text-align: right;
 }
 
-section > p,
-section > footer,
-section > table {
+section>p,
+section>footer,
+section>table {
     width: 100%;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
-section > dl,
-section > ol,
-section > ul {
+section>dl,
+section>ol,
+section>ul {
     width: 50%;
     -webkit-padding-start: 5%;
 }
@@ -451,18 +465,27 @@ sup {
 
 
 /* Links: replicate underline that clears descenders */
-a:link,
-a:visited {
-    color: inherit;
+a:link {
+    color: #606060;
+    text-decoration: none;
 }
 
+a:visited {
+    color: #808080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 .no-tufte-underline:link {
     background: unset;
     text-shadow: none;
 }
 
-a:link, .tufte-underline, .hover-tufte-underline:hover {
+a:hover,
+.tufte-underline,
+.hover-tufte-underline:hover {
     text-decoration: none;
     background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
     background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
@@ -474,7 +497,10 @@ a:link, .tufte-underline, .hover-tufte-underline:hover {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    a:link, .tufte-underline, .hover-tufte-underline:hover {
+
+    a:hover,
+    .tufte-underline,
+    .hover-tufte-underline:hover {
         background-position-y: 87%, 87%, 87%;
     }
 }
@@ -494,19 +520,21 @@ img {
     grid-column-start: 3;
     float: right;
     clear: right;
-    margin-right: -35%;
+    margin-right: -55%;
     filter: drop-shadow(0.1rem 0.1rem 5px black)
 }
+
 
 .sidenote,
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -30%;                           
-    width: 20%;
+    color: #535353;
+    margin-right: -40%;
+    width: 33%;
     margin-top: 0.3rem;
     margin-bottom: 0;
-    font-size: 0.7rem;
+    font-size: 1rem;
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
@@ -519,7 +547,7 @@ img {
 
 .sidenote-number:after,
 .sidenote:before {
-    font-family: MontaguSlab;
+    font-family: DiderotText;
     position: relative;
     vertical-align: baseline;
 }
@@ -534,13 +562,14 @@ img {
 .sidenote:before {
     content: counter(sidenote-counter);
     font-size: 0.7rem;
-    top: -0.5rem;
+    top: -0.4rem;
+    left: -0.25rem;
 }
 
 blockquote .sidenote,
 blockquote .marginnote {
-    margin-right: -39%;
-    width: 23%;
+    margin-right: -47%;
+    width: 30%;
     text-align: left;
 }
 
@@ -559,29 +588,31 @@ div.table-wrapper {
     letter-spacing: .03em;
 }
 
-code, pre > code {
+code,
+pre>code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.0rem;
     line-height: 1.42;
-    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+    -webkit-text-size-adjust: 100%;
+    /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
 }
 
-.sans > code {
+.sans>code {
     font-size: 1.2rem;
 }
 
-h1 > code,
-h2 > code,
-h3 > code {
+h1>code,
+h2>code,
+h3>code {
     font-size: 0.80em;
 }
 
-.marginnote > code,
-.sidenote > code {
+.marginnote>code,
+.sidenote>code {
     font-size: 1rem;
 }
 
-pre > code {
+pre>code {
     font-size: 0.9rem;
     width: 52.5%;
     margin-left: 2.5%;
@@ -589,13 +620,13 @@ pre > code {
     display: block;
 }
 
-pre.fullwidth > code {
+pre.fullwidth>code {
     width: 90%;
 }
 
 .fullwidth {
     max-width: 90%;
-    clear:both;
+    clear: both;
 }
 
 span.newthought {
@@ -608,8 +639,9 @@ input.margin-toggle {
 }
 
 label.sidenote-number {
-    display: inline-block;
-    max-height: 2rem; /* should be less than or equal to paragraph line-height */
+    display: inline;
+    max-height: 2rem;
+    /* should be less than or equal to paragraph line-height */
 }
 
 label.margin-toggle:not(.sidenote-number) {
@@ -618,7 +650,8 @@ label.margin-toggle:not(.sidenote-number) {
 
 .iframe-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
@@ -631,77 +664,102 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
+
+
+/** styling small screens **/
+
+
 @media (max-width: 800px) {
+
     body {
         font-size: 16px;
         --baseline: 16px;
+        padding-right: 1rem;
+    }
+
+    nav {
+        display: inline;
+        z-index: 99;
+        gap: 0.2rem;
+        font-size: 18px;
+        width: auto;
+    }
+
+    nav ul {
+        margin-block-start: 0;
+    }
+
+    .initiales {
+        line-height: 1em;
+    }
+
+    .navigation {
+        line-height: 1em;
+        padding-bottom: 0.8rem;
     }
 
     .entete {
-        position: sticky;
         top: 0;
         display: flex;
         flex-direction: row;
         row-gap: 0;
         padding-left: 2.5rem;
         z-index: 80;
+        padding-top: 12rem;
 
     }
 
     .title {
-        margin-block-start: 0;
+        font-size: 24px;
+        width: 80%;
     }
 
-     nav {
-            display: flex;
-            flex-direction: column;
-            position: sticky;
-            z-index: 99;
-            height: auto;
-     }
 
-    .initiales{
-        line-height: 0.5em;
-        padding-inline-start: 0em;
-     }
-    .navigation{
-        line-height: 0.5em;
-    }
-    .sidebar{display: none;}
 
-    
-        
-    .corpsdetexte{
-        padding-left: 0.8rem;
-        padding-right: 0.5rem;
-        padding-top: 1rem;
-        width: 90%;
+
+
+    .sidebar {
+        display: none;
     }
 
-    article {
+
+
+    .corpsdetexte {
+        padding: 10px;
+        font-size: 16px;
         width: 100%;
+        text-align: justify;
+
+        h1,
+        h2,
+        h3 {
+            text-align: left;
+            font-size: 1.5em;
+        }
     }
 
-    .abstract{
+
+
+    .abstract {
         width: 70%;
         text-align: justify;
-       
+
     }
 
     hr,
-    section > p,
-    section > footer,
-    section > table {
+    section>p,
+    section>footer,
+    section>table {
         width: 100%;
     }
 
-    pre > code {
+    pre>code {
         width: 97%;
     }
 
-    section > dl,
-    section > ol,
-    section > ul {
+    section>dl,
+    section>ol,
+    section>ul {
         width: 90%;
     }
 
@@ -718,7 +776,7 @@ label.margin-toggle:not(.sidenote-number) {
     blockquote {
         margin-left: 1.5em;
         margin-right: 0em;
-        font-size: 18px;
+        font-size: 0.8em;
     }
 
     blockquote p,
@@ -736,8 +794,8 @@ label.margin-toggle:not(.sidenote-number) {
         display: none;
     }
 
-    .margin-toggle:checked + .sidenote,
-    .margin-toggle:checked + .marginnote {
+    .margin-toggle:checked+.sidenote,
+    .margin-toggle:checked+.marginnote {
         display: block;
         float: left;
         left: 1rem;
@@ -758,7 +816,7 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     img {
-       display: none;
+        display: none;
     }
 
     iframe {

@@ -39,7 +39,7 @@
       src:url("../fonts/SpaceGrotesk-Bold.ttf");
     }
     @font-face {
-      font-family: SaceGrotesk;
+      font-family: SpaceGrotesk;
       font-style: normal;
       font-weight: lighter;
       src:url("../fonts/SpaceGrotesk-Light.ttf");
@@ -55,6 +55,8 @@
       font-family: MontaguSlab;
       src:url(../fonts/MontaguSlab-VariableFont_opsz\,wght.ttf);
     }
+
+
 
 
   body {
